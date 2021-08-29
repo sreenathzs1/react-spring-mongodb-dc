@@ -4,4 +4,4 @@ services:
     image: pavanvere/frontend:latest
     container_name: react
     ports:
-      - "3000:3000"
+      - "3001:3000"
