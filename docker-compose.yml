@@ -16,4 +16,4 @@ services:
 
   mongo:
     image: mongo
-    container_name: mongo
+    container_name: mongodb
