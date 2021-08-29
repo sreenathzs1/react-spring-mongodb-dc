@@ -1,6 +1,6 @@
-FROM    node:13.12.0-alpine
+FROM    node:alpine
 RUN     mkdir /app
 WORKDIR /app
 COPY    . .
 RUN     npm install
-CMD     ["npm","start"]
+CMD     ["npm", "run", "start"]
