@@ -1,7 +1,6 @@
-FROM    node:stretch-slim
+FROM    node:13.12.0-alpine
 RUN     mkdir /app
 WORKDIR /app
 COPY    . .
-ENV     DEBUG=*
 RUN     npm install
 CMD     ["npm","start"]
