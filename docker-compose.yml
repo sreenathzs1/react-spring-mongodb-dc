@@ -3,7 +3,6 @@ services:
   frontend:
     image: pavanvere/frontend:latest
     container_name: react
-    restart: always
     ports:
       - "3000:3000"
 
@@ -12,9 +11,3 @@ services:
     container_name: springboot
     ports:
       - "8080:8080"
-
-  mongo:
-    image: mongo
-    container_name: mongodb
-    ports:
-    - "27017:27017"
