@@ -3,7 +3,7 @@ services:
   frontend:
     image: pavanvere/frontend:latest
     container_name: react
-    restart: on-failure
+    restart: always
     ports:
       - "3000:3000"
 
