@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  frontend:
+    image: pavanvere/frontend:latest
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - springboot
+
+  springboot:
+    image: pavanvere/springboot:latest
+    container_name: springboot
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    container_name: mongo
