@@ -5,9 +5,3 @@ services:
     container_name: react
     ports:
       - "3000:3000"
-
-  springboot:
-    image: pavanvere/springboot:latest
-    container_name: springboot
-    ports:
-      - "8080:8080"
