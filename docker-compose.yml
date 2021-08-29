@@ -3,5 +3,6 @@ services:
   frontend:
     image: pavanvere/frontend:latest
     container_name: react
+    stdin_open: true
     ports:
       - "3001:3000"
