@@ -5,8 +5,29 @@ compile:
   stage: build
   #image: maven:3.6.1-jdk-8-alpine
   script:
-    - 'docker build -t frontend .'
+    - 'docker build -t frontend React-spring-mongodb/react-frontend'
   tags:
     - gitlab-org-docker
     #when:
     # manual
+
+image: docker:latest
+
+services:
+  - docker:dind
+
+before_script:
+  - docker info
+  - docker login -u some_user -p nexus-rfit some_host
+
+stages:
+  - build
+
+build-deploy-ubuntu-image:
+  stage: build
+  script:
+    - docker build -t some_host/dev-image:ubuntu ./ubuntu/
+    - docker push some_host/dev-image:ubuntu
+  only:
+    - master
+  when: manual
