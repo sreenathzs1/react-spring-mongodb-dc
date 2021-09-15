@@ -6,12 +6,17 @@ services:
     stdin_open: true
     ports:
       - "3001:3000"
+    depends_on:
+      - mongodb
+      - springboot
 
   springboot:
     image: pavanvere/spring:0.0.1
     container_name: springboot
     ports:
     - "8080:8080"
+    depends_on:
+      - mongodb
 
   mongodb:
     image: mongo
