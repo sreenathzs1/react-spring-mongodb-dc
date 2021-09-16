@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   frontend:
-    image: pavanvere/frontend:0.0.1
+    image: pavanvere/frontend:0.0.1  # or 0.0.17
     container_name: react
     stdin_open: true
     ports:
