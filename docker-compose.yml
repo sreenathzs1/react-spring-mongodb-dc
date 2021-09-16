@@ -11,7 +11,7 @@ services:
       - springboot
 
   springboot:
-    image: pavanvere/spring:0.0.1
+    image: pavanvere/spring:0.0.10
     container_name: springboot
     environment:
       MONGO_URL: mongodb://mongo:27017/EmployeeDB
