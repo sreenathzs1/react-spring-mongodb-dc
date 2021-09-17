@@ -8,7 +8,7 @@ services:
     ports:
       - "3001:3000"
     depends_on:
-      - mongodb
+      - mongo
       - springboot
 
   springboot:
@@ -20,7 +20,7 @@ services:
     ports:
     - "8080:8080"
     depends_on:
-      - mongodb
+      - mongo
 
   mongodb:
     image: mongo
