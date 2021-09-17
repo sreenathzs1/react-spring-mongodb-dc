@@ -2,7 +2,7 @@ version: "3.9"
 services:
   frontend:
     build: ./react-frontend
-    image: "dockercompose/frontend:0.0.18"  # or 0.0.17 #docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' springboot
+    image: "dockercompose/frontend:0.0.1"  # or 0.0.17 #docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' springboot
     container_name: react
     stdin_open: true
     ports:
