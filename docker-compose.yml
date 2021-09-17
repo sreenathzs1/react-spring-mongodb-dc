@@ -6,7 +6,7 @@ services:
     container_name: react      #127 image 1 # image public ip # image3 localhost # image4 container name
     stdin_open: true
     environment:
-      EMPLOYEE_API_BASE_URL: http://0.0.0.0:8080/api/v1/employees
+      EMPLOYEE_API_BASE_URL: "http://0.0.0.0:8080/api/v1/employees"
     ports:
       - "3001:3000"
     depends_on:
