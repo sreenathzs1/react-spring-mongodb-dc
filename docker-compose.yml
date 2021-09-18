@@ -18,8 +18,8 @@ services:
       - springboot
 
   springboot:
-    #build: ./springboot-mongodb-crud-example
-    image: pavanvere/springboot:0.0.1
+    build: ./springboot-mongodb-crud-example
+    #image: pavanvere/springboot:0.0.1
     container_name: springboot
     environment:
       MONGO_URL: mongodb://mongo:27017/EmployeeDB
