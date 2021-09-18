@@ -3,7 +3,7 @@ services:
   frontend:
     build: ./react-frontend
     environment: 
-      EMPLOYEE_API_BASE_URL: process.API_URL
+      EMPLOYEE_API_BASE_URL: process.env.API_URL
     #args: 
     #EMPLOYEE_API_BASE_URL: http://18.204.231.151:8080/api/v1/employees
     #image: pavanvere/frontend:0.0.1  # or 0.0.17 #docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' springboot
