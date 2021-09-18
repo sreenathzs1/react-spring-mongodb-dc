@@ -5,6 +5,8 @@ services:
     #image: "dockercompose/frontend:0.0.4"  # or 0.0.17 #docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' springboot
     container_name: react      #127 image 1 # image public ip # image3 localhost # image4 container name
     stdin_open: true
+    environment: 
+      EMPLOYEE_API_BASE_URL: http://18.204.231.151:8080/api/v1/employees
     ports:
       - "3001:3000"
     depends_on:
