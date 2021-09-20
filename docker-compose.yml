@@ -6,7 +6,7 @@ services:
     container_name: react      #127 image 1 # image public ip # image3 localhost # image4 container name
     stdin_open: true
     environment: 
-      - REACT_APP_API_URL=http://localhost:8081/api/v1/employees
+      - REACT_APP_API_URL=http://localhost:8082/api/v1/employees
       #BACKEND_API: localhost
     ports:
       - "3001:3000"
@@ -22,7 +22,7 @@ services:
       DB_SERVER: mongo
       #MONGO_URL: mongodb://mongo:27017/EmployeeDB
     ports:
-    - "8081:8080"
+    - "8082:8080"
     depends_on:
       - mongo
 
