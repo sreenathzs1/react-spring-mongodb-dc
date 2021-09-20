@@ -6,7 +6,7 @@ services:
     container_name: react      #127 image 1 # image public ip # image3 localhost # image4 container name
     stdin_open: true
     environment: 
-      - BACKEND_API=3.233.109.17
+      BACKEND_API: springboot
     ports:
       - "3001:3000"
     depends_on:
