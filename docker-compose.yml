@@ -18,7 +18,8 @@ services:
     #image: pavanvere/springboot:0.0.1
     container_name: springboot
     environment:
-      MONGO_URL: mongodb://mongo:27017/EmployeeDB
+      DB_SERVER: mongo
+      #MONGO_URL: mongodb://mongo:27017/EmployeeDB
     ports:
     - "8080:8080"
     depends_on:
