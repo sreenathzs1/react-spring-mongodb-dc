@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = { url: process.env.REACT_APP_API_URL}; //backend service name
+const url = process.env.REACT_APP_API_URL; //backend service name
 
 class EmployeeService {
 
