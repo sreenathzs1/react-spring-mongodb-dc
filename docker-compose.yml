@@ -14,7 +14,7 @@ services:
       - springboot
 
   springboot:
-    build: ./springboot-backend
+    build: ./backend-springboot
     container_name: springboot
     environment:
       DB_SERVER: mongo

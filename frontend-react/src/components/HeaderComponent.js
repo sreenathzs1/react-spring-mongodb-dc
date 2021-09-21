@@ -14,7 +14,7 @@ class HeaderComponent extends Component {
             <div>
                 <header>
                     <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-                    <div><a href="" className="navbar-brand">Employee Management App</a></div>
+                    <div><a href="https://www.zelarsoft.com" className="navbar-brand"><i>ZelarSoft Employee Management App</i></a></div>
                     </nav>
                 </header>
             </div>
