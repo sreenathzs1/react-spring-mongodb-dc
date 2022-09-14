@@ -18,10 +18,15 @@ jobs:
     - name: node setup
       uses: actions/setup-node@v3
       with:
-        node-version: 16        
-    - name: installing npm and run
+        node-version: 16  
+    - name: node version
+      run: 
+        node -v
+    - name: installing npm
       run: 
         npm install
+    - name: npm run 
+      run:
         npm run
         npm start
     
