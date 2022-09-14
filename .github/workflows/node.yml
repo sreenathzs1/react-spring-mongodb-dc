@@ -23,7 +23,8 @@ jobs:
       run: 
         node -v
     - name: installing npm
-      run: 
+      run: |
+        cd frontend-react
         npm install
     - name: npm run 
       run:
