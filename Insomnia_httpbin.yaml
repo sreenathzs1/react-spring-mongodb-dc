@@ -1,0 +1,1756 @@
+_type: export
+__export_format: 4
+__export_date: 2024-01-03T09:46:55.595Z
+__export_source: insomnia.desktop.app:v2023.5.8
+resources:
+  - _id: req_ccb6d5cc17c0480896bc397a5e860ccc
+    parentId: fld_5aa87f6eb20f4036a2c414e8b72ff3e6
+    modified: 1704274773341
+    created: 1704274773341
+    url: "{{ _.base_url }}/cookies/delete"
+    name: Delete one or more simple cookies
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - name: freeform
+        disabled: true
+        value: "[object Object]"
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773341
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_5aa87f6eb20f4036a2c414e8b72ff3e6
+    parentId: wrk_212f99a03e6b412eb4ada211767460fa
+    modified: 1704274773337
+    created: 1704274773337
+    name: Cookies
+    description: Operations for cookies
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1704274773337
+    _type: request_group
+  - _id: wrk_212f99a03e6b412eb4ada211767460fa
+    parentId: null
+    modified: 1704274868212
+    created: 1704274766042
+    name: httpbin
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_fa1484a32e9746d18b1f8ad88fe827dd
+    parentId: fld_5aa87f6eb20f4036a2c414e8b72ff3e6
+    modified: 1704274773340
+    created: 1704274773340
+    url: "{{ _.base_url }}/cookies/set"
+    name: Sets one or more simple cookies
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - name: freeform
+        disabled: true
+        value: "[object Object]"
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773340
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_75b6dbed87de480fa2b04cc7f26479d5
+    parentId: fld_5aa87f6eb20f4036a2c414e8b72ff3e6
+    modified: 1704274773340
+    created: 1704274773340
+    url: "{{ _.base_url }}/cookies"
+    name: Returns cookie data
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773340
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f06a343730984be58fd24bd628046ca3
+    parentId: fld_f71b117a18944b1199e11f6622460b70
+    modified: 1704274773337
+    created: 1704274773337
+    url: "{{ _.base_url }}/get"
+    name: >
+      Returns the GET request's data. Accepts any query parameters and any
+      headers.
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - name: freeform
+        disabled: true
+        value: "[object Object]"
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773337
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_f71b117a18944b1199e11f6622460b70
+    parentId: wrk_212f99a03e6b412eb4ada211767460fa
+    modified: 1704274773336
+    created: 1704274773336
+    name: HTTP methods
+    description: Operations for testing different HTTP methods
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1704274773336
+    _type: request_group
+  - _id: req_b2e49cab4abd44c69521e55757d5f097
+    parentId: fld_f71b117a18944b1199e11f6622460b70
+    modified: 1704274773337
+    created: 1704274773337
+    url: "{{ _.base_url }}/post"
+    name: Returns the POSTed data
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: "null"
+    parameters:
+      - name: freeform
+        disabled: true
+        value: "[object Object]"
+    headers:
+      - name: Content-Type
+        disabled: false
+        value: application/json
+    authentication: {}
+    metaSortKey: -1704274773337
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_87bc2be65eb74f328d5fdedcab11b1e7
+    parentId: fld_f71b117a18944b1199e11f6622460b70
+    modified: 1704274773337
+    created: 1704274773337
+    url: "{{ _.base_url }}/delete"
+    name: >
+      Returns the DELETE request's data. Accepts any query parameters and any
+      headers.
+    description: ""
+    method: DELETE
+    body: {}
+    parameters:
+      - name: freeform
+        disabled: true
+        value: "[object Object]"
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773337
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b971728f95fc4067a185c77f18fb87ba
+    parentId: fld_affe8c78b4f84bc1ad38b9a2c0d161b8
+    modified: 1704274773340
+    created: 1704274773340
+    url: "{{ _.base_url }}/xml"
+    name: Returns some XML.
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773340
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_affe8c78b4f84bc1ad38b9a2c0d161b8
+    parentId: wrk_212f99a03e6b412eb4ada211767460fa
+    modified: 1704274773336
+    created: 1704274773336
+    name: default
+    description: Operations for deafult
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1704274773336
+    _type: request_group
+  - _id: req_9173473274b34efabf5adfa896a5f858
+    parentId: fld_affe8c78b4f84bc1ad38b9a2c0d161b8
+    modified: 1704274773340
+    created: 1704274773340
+    url: "{{ _.base_url }}/html"
+    name: Returns an HTML page
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773340
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4e06069db61344f5a5f5ccb994d0d51f
+    parentId: fld_affe8c78b4f84bc1ad38b9a2c0d161b8
+    modified: 1704274773338
+    created: 1704274773338
+    url: "{{ _.base_url }}/ip"
+    name: Returns Origin IP.
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773338
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_455e5f0589e74d50888e4d8cf10908fa
+    parentId: fld_affe8c78b4f84bc1ad38b9a2c0d161b8
+    modified: 1704274773338
+    created: 1704274773338
+    url: "{{ _.base_url }}/user-agent"
+    name: Returns the user agent.
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773338
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2b927a68605a4e8e93e614394b71adb3
+    parentId: fld_affe8c78b4f84bc1ad38b9a2c0d161b8
+    modified: 1704274773338
+    created: 1704274773338
+    url: "{{ _.base_url }}/headers"
+    name: Returns the request headers.
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773338
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d8d5f78ec02f4bceb0b0631f4c1b58f8
+    parentId: fld_8af7eb5de5ca47108396cd8bf4ea9ba5
+    modified: 1704274773339
+    created: 1704274773339
+    url: "{{ _.base_url }}/status/{{ _.statusCode }}"
+    name: /status/{statusCode}
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773339
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_8af7eb5de5ca47108396cd8bf4ea9ba5
+    parentId: wrk_212f99a03e6b412eb4ada211767460fa
+    modified: 1704274773336
+    created: 1704274773336
+    name: Status codes
+    description: Return the specified HTTP status code, or a random status code if
+      more than one are given
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1704274773336
+    _type: request_group
+  - _id: req_bf45374f130a4996b7e90d1202715b3a
+    parentId: fld_8af7eb5de5ca47108396cd8bf4ea9ba5
+    modified: 1704274773339
+    created: 1704274773339
+    url: "{{ _.base_url }}/status/{{ _.statusCode }}"
+    name: /status/{statusCode}
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773339
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9cf2bc14c54b4050a6ba1ecb578a1ff8
+    parentId: fld_8af7eb5de5ca47108396cd8bf4ea9ba5
+    modified: 1704274773339
+    created: 1704274773339
+    url: "{{ _.base_url }}/status/{{ _.statusCode }}"
+    name: /status/{statusCode}
+    description: ""
+    method: PATCH
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773339
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_99f649c6890e426d88083fe1d97aa497
+    parentId: fld_8af7eb5de5ca47108396cd8bf4ea9ba5
+    modified: 1704274773339
+    created: 1704274773339
+    url: "{{ _.base_url }}/status/{{ _.statusCode }}"
+    name: /status/{statusCode}
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773339
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9467e5562a864641872bba7ce6038b15
+    parentId: fld_8af7eb5de5ca47108396cd8bf4ea9ba5
+    modified: 1704274773339
+    created: 1704274773339
+    url: "{{ _.base_url }}/status/{{ _.statusCode }}"
+    name: /status/{statusCode}
+    description: ""
+    method: PUT
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773339
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e3f7be625f9b411d891a45f8474e1523
+    parentId: fld_42fc4a3573c84a7db9e13dacfc105ed9
+    modified: 1704274773340
+    created: 1704274773340
+    url: "{{ _.base_url }}/image"
+    name: Returns an image based on the Accept header.
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773340
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_42fc4a3573c84a7db9e13dacfc105ed9
+    parentId: wrk_212f99a03e6b412eb4ada211767460fa
+    modified: 1704274773336
+    created: 1704274773336
+    name: images
+    description: Operations for images
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1704274773336
+    _type: request_group
+  - _id: req_44520ec1f949474483cc7f63b6f6e9af
+    parentId: fld_42fc4a3573c84a7db9e13dacfc105ed9
+    modified: 1704274773340
+    created: 1704274773340
+    url: "{{ _.base_url }}/image/{{ _.format }}"
+    name: Returns an image with the specified format.
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773340
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6c8c62db510347ccab619d2a60e9ace1
+    parentId: fld_3f4d4d95d4b34bd4b7abfea4932c322c
+    modified: 1704274773338
+    created: 1704274773338
+    url: "{{ _.base_url }}/delay/{{ _.n }}"
+    name: Delays responding for min(n, 10) seconds.
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773338
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_3f4d4d95d4b34bd4b7abfea4932c322c
+    parentId: wrk_212f99a03e6b412eb4ada211767460fa
+    modified: 1704274773336
+    created: 1704274773336
+    name: time
+    description: Operations for time
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1704274773336
+    _type: request_group
+  - _id: req_da764e0cd19a4a38a132a30d702a0a75
+    parentId: fld_3f4d4d95d4b34bd4b7abfea4932c322c
+    modified: 1704274773337
+    created: 1704274773337
+    url: "{{ _.base_url }}/when/{{ _.human-timestamp }}"
+    name: /when/{human-timestamp}
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773337
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4c072ac52d1e4313a04c14afe8d57a1b
+    parentId: fld_3f4d4d95d4b34bd4b7abfea4932c322c
+    modified: 1704274773337
+    created: 1704274773337
+    url: "{{ _.base_url }}/"
+    name: The current time, in a variety of formats
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773337
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_137a04f47b0240c28b5e494f5c5bd2c0
+    parentId: fld_3f4d4d95d4b34bd4b7abfea4932c322c
+    modified: 1704274773337
+    created: 1704274773337
+    url: "{{ _.base_url }}/parse/{{ _.machine-timestamp }}"
+    name: /parse/{machine-timestamp}
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1704274773337
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_472d5be9dff64143a9dff34918ee6bfe
+    parentId: fld_06397206a10f4d0cab60d60c0c466f98
+    modified: 1704274773340
+    created: 1704274773340
+    url: "{{ _.base_url }}/cache"
+    name: Returns 200 unless an If-Modified-Since or If-None-Match header is
+      provided, when it returns a 304.
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: If-Modified-Since
+        disabled: true
+        value: Wed, 21 Oct 2015 07:28:00 GMT
+      - name: If-None-Match
+        disabled: true
+        value: string
+    authentication: {}
+    metaSortKey: -1704274773340
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_06397206a10f4d0cab60d60c0c466f98
+    parentId: wrk_212f99a03e6b412eb4ada211767460fa
+    modified: 1704274773336
+    created: 1704274773336
+    name: cache
+    description: Operations for cache
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1704274773336
+    _type: request_group
+  - _id: req_23e5925de1814e86af6136ca85a93775
+    parentId: fld_3fc9c124b9a248cba73e2a38f39d4331
+    modified: 1704274773339
+    created: 1704274773339
+    url: "{{ _.base_url }}/bearer"
+    name: Tests Bearer authentication
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: bearer
+      token: "{{ _.bearerToken }}"
+      prefix: ""
+    metaSortKey: -1704274773339
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_3fc9c124b9a248cba73e2a38f39d4331
+    parentId: wrk_212f99a03e6b412eb4ada211767460fa
+    modified: 1704274773335
+    created: 1704274773335
+    name: auth
+    description: Operations for testing various authentication types
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1704274773335
+    _type: request_group
+  - _id: req_c51340790bb34e109f23f6c49abaca60
+    parentId: fld_3fc9c124b9a248cba73e2a38f39d4331
+    modified: 1704274773338
+    created: 1704274773338
+    url: "{{ _.base_url }}/hidden-basic-auth/{{ _.user }}/{{ _.password }}"
+    name: Hidden Basic authentication
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: basic
+      username: "{{ _.httpUsername }}"
+      password: "{{ _.httpPassword }}"
+    metaSortKey: -1704274773338
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_071e65041f6d44c4bf89f64004ff2059
+    parentId: fld_3fc9c124b9a248cba73e2a38f39d4331
+    modified: 1704274773338
+    created: 1704274773338
+    url: "{{ _.base_url }}/basic-auth/{{ _.user }}/{{ _.password }}"
+    name: Challenges HTTPBasic Auth.
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: basic
+      username: "{{ _.httpUsername }}"
+      password: "{{ _.httpPassword }}"
+    metaSortKey: -1704274773338
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_d658eb43c0b19c015dc7ce7e8ebcc9af0dd67451
+    parentId: wrk_212f99a03e6b412eb4ada211767460fa
+    modified: 1704274766056
+    created: 1704274766056
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1704274766056
+    _type: environment
+  - _id: jar_d658eb43c0b19c015dc7ce7e8ebcc9af0dd67451
+    parentId: wrk_212f99a03e6b412eb4ada211767460fa
+    modified: 1704274766057
+    created: 1704274766057
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_2f9efbb818374b11ab136cce0d70d788
+    parentId: wrk_212f99a03e6b412eb4ada211767460fa
+    modified: 1704274868211
+    created: 1704274766054
+    fileName: httpbin
+    contents: >-
+      openapi: 3.0.1
+
+      info:
+        version: '1.0-oas3'
+        title: httpbin
+        description: An unofficial OpenAPI definition for [httpbin.org](https://httpbin.org).
+        contact:
+          name: HttpBin API
+          url: https://kennethreitz.org/
+          email: me@kennethreitz.org
+
+      servers:
+        - url: https://httpbin.org
+        - url: http://httpbin.org
+        - url: https://eu.httpbin.org
+        - url: http://eu.httpbin.org
+
+      tags:
+        - name: auth
+          description: Operations for testing various authentication types
+        - name: HTTP methods
+          description: Operations for testing different HTTP methods
+        - name: Status codes
+          description: Return the specified HTTP status code, or a random status code if more than one are given
+        - name: time
+          description: Operations for time
+        - name: default
+          description: Operations for deafult
+        - name: images
+          description: Operations for images
+        - name: cache
+          description: Operations for cache
+        - name: Cookies
+          description: Operations for cookies
+      # All paths & parameters are described in
+
+      # https://github.com/kennethreitz/httpbin/blob/master/httpbin/core.py
+
+
+      externalDocs:
+        url: http://httpbin.org/legacy
+
+      paths:
+        # New operations for parsing time
+        /:
+          get:
+            description: inso lint desc
+            operationId: getById
+            summary: The current time, in a variety of formats
+            tags:
+              - time
+            servers:
+              - url: https://now.httpbin.org
+              - url: http://now.httpbin.org
+            #externalDocs:
+            #  url: /docs # ???
+            responses:
+              '200':
+                description: OK
+                content:
+                  application/json:
+                    schema:
+                      type: object
+                      properties:
+                        now:
+                          $ref: '#/components/schemas/Timestamp'
+                        urls:
+                          type: array
+                          items:
+                            type: string
+                          example:
+                            - '/'
+                            - '/docs'
+                            - '/when/:human-timestamp'
+                            - '/parse/:machine-timestamp'
+                      required:
+                        - now
+                        - urls
+
+        /when/{human-timestamp}:
+          get:
+            description: inso lint desc
+            operationId: gettimeById    
+            tags:
+              - time
+            servers:
+              - url: http://now.httpbin.org
+              - url: https://now.httpbin.org
+            parameters:
+              - in: path
+                name: human-timestamp
+                required: true
+                schema:
+                  anyOf:
+                    - type: string # ????
+            responses:
+              '200':
+                $ref: '#/components/responses/TimestampResponse'
+              '500':
+                description: oops
+
+        /parse/{machine-timestamp}:
+          get:
+            description: inso lint desc
+            operationId: getmachinetimeById
+            tags:
+              - time
+            servers:
+              - url: http://now.httpbin.org
+              - url: https://now.httpbin.org
+            parameters:
+              - in: path
+                name: machine-timestamp
+                required: true
+                schema:
+                  anyOf:
+                    - type: string # ????
+                    - type: number
+            responses:
+              '200':
+                $ref: '#/components/responses/TimestampResponse'
+              '500':
+                description: oops
+
+        /get:
+          get:
+            description: inso lint desc
+            operationId: gethttpgetmethodById 
+            tags:
+              - HTTP methods
+            summary: |
+              Returns the GET request's data. Accepts any query parameters and any headers.
+            parameters:
+              - $ref: '#/components/parameters/freeFormQuery'
+            responses:
+              '200':  # Change to 'default' ???
+                description: OK
+                content:
+                  application/json:
+                    schema:
+                      type: object
+
+        /delete:
+          delete:
+            description: inso lint desc
+            operationId: gethttpdeletemethodById 
+            tags:
+              - HTTP methods
+            summary: |
+              Returns the DELETE request's data. Accepts any query parameters and any headers.
+            parameters:
+              - $ref: '#/components/parameters/freeFormQuery'
+            responses:
+              '200':
+                description: OK
+
+        /post:
+          post:
+            description: inso lint desc
+            operationId: gethttppostmethodById  
+            tags:
+              - HTTP methods
+            # summary: POSTs a pizza order and returns the POSTed data.
+            summary: Returns the POSTed data
+            parameters:
+              - $ref: '#/components/parameters/freeFormQuery'
+            requestBody:
+              description: Data provided in the request body will be returned in the response.
+              content:
+                application/json:
+                  schema: {}
+                  example:
+                    message: Hello, world!
+                application/vnd+json:
+                  schema: {}
+                  examples:
+                    pizzaOrder:
+                      summary: Pizza order data
+                      description: Longer description ...
+                      value:
+                        custname: Alice
+                        custtel: '+1-202-555-0100'
+                        custemail: alice@wonderland.net
+                        size: medium
+                        topping: [cheese, mushroom]
+                        delivery: '19:00'
+                        comments: Ring the door bell three times
+                    simpleObject:
+                      summary: sample object
+                      value:
+                        foo: bar
+                application/xml:
+                  schema:
+                    type: object
+                  example:
+                    message: Hello, world!
+                text/plain:
+                  schema:
+                    type: string
+                    example: Hi there
+                application/x-www-form-urlencoded:
+                  schema:
+                    # anyOf:
+                    #   - type: object
+                    #     additionalProperties: true
+
+                    #   - description: Pizza order
+                    type: object
+                    properties:
+                      custname:
+                        type: string
+                        example: Alice
+                        description: Customer name
+                      custtel:
+                        type: string
+                        example: '+1-202-555-0100'
+                        description: Customer phone number
+                      custemail:
+                        type: string
+                        format: email
+                        example: alice@wonderland.net
+                        description: Customer email address
+                      size:
+                        type: string
+                        enum:
+                          - small
+                          - medium
+                          - large
+                        description: Pizza size
+                      topping:
+                        type: array
+                        items:
+                          type: string
+                          enum:
+                            - bacon
+                            - cheese
+                            - mushroom
+                            - onion
+                        description: Pizza toppings
+                      delivery:
+                        type: string
+                        example: '13:30'
+                        description: Delivery time
+                      comments:
+                        type: string
+                        example: ASAP
+                        description: Comments
+                  examples:
+                    pizzaOrder:
+                      summary: Pizza order data
+                      description: Longer description ...
+                      value:
+                        custname: Alice
+                        custtel: '+1-202-555-0100'
+                        custemail: alice@wonderland.net
+                        size: medium
+                        topping: [cheese, mushroom]
+                        delivery: '19:00'
+                        comments: Ring the door bell three times
+                    simpleObject:
+                      summary: sample object
+                      value:
+                        foo: bar
+                # multipart/form-data: {}  # TODO
+                '*/*':   # is this valid?
+                  schema: {}
+            responses:
+              '200':
+                description: OK
+                content:
+                  application/json:
+                    schema:
+                      $ref: '#/components/schemas/CommonResponse'
+                    #schema:
+                    #  type: object
+
+        # /put: {}
+        # /patch: {}
+        # /delete: {}
+        # /response-headers:
+        #   parameters:
+        #     - in: query
+        #       name: headers
+        #       # Arbitrary key=value pairs
+        #       schema:
+        #         type: object
+        #         example:
+        #           Server: unicorn
+        #       style: simple
+        #   get: {}
+        #   post: {}
+
+
+        /ip:
+          get:
+            description: inso lint desc
+            operationId: getIPById  
+            tags:
+              - default
+            summary: Returns Origin IP.
+            responses:
+              '200':
+                description: OK
+                content:
+                  application/json:
+                    schema:
+                      type: object
+                      properties:
+                        origin:
+                          type: string
+                          description: >
+                            The IP address, or a comma-separated list of IP addresses.
+                            For example, "10.100.10.10, 10.100.20.254, 52.91.14.13"'
+                          example: 10.100.10.10
+                      required:
+                        - origin
+                    examples:   # Content examples override schema-level examples
+                      oneIp:
+                        description: Example of a single IP
+                        value:
+                          origin: 10.100.10.10
+                      multipleIps:
+                        description: Example of multiple IPs
+                        value:
+                          origin: 10.100.10.10, 10.100.20.254, 52.91.14.13
+
+        /user-agent:
+          get:
+            description: inso lint desc
+            operationId: getuserById  
+            tags:
+              - default
+            summary: Returns the user agent.
+            responses:
+              '200':
+                description: OK
+                content:
+                  application/json:
+                    schema:
+                      type: object
+                      properties:
+                        user-agent:
+                          type: string
+                          example: curl/7.37.0
+                      required:
+                        - user-agent
+
+        /headers:
+          get:
+            description: inso lint desc
+            operationId: getheadersById  
+            tags:
+              - default
+            summary: Returns the request headers.
+            responses:
+              '200':
+                description: OK
+                content:
+                  application/json:
+                    schema:
+                      type: object
+                      properties:
+                        headers:
+                          type: object
+                          additionalProperties:
+                            type: string
+                          # wrong syntax!
+                          #example:
+                          #  $ref: '#/components/examples/headers'
+                      required:
+                        - headers
+
+        # /anything:
+        #   summary: Returns request data, including method used.
+        #   get: {}
+        #   post: {}
+        #   put: {}
+        #   patch: {}
+        #   delete: {}
+        #   trace: {}
+        #   options: {}
+
+        # /anything/{anything}:
+        #   summary: Returns request data, including method used.
+
+        #   parameters:
+        #     - in: path
+        #       name: anything
+        #       required: true
+        #       schema:
+        #         type: string
+        #       description: An arbitrary subpath
+
+        #   get: {}
+        #   post: {}
+        #   put: {}
+        #   patch: {}
+        #   delete: {}
+        #   trace: {}
+        #   options: {}
+
+        /delay/{n}:
+          get:
+            description: inso lint desc
+            operationId: getdealytimeById  
+            tags:
+              - time
+            summary: Delays responding for min(n, 10) seconds.
+            parameters:
+              - name: n
+                in: path
+                required: true
+                description: Response delay, in seconds.
+                schema:
+                  type: integer
+                  minimum: 0
+                  maximum: 10
+            responses:
+              '200':
+                description: OK
+                content:
+                  application/json: {}
+                    # schema:
+                    #   type: object
+
+        /basic-auth/{user}/{password}:
+          get:
+            description: inso lint desc
+            operationId: getuserpasswordById  
+            summary: Challenges HTTPBasic Auth.
+            tags:
+              - auth
+            security:
+              - basicAuth: []
+            parameters:
+              - $ref: '#/components/parameters/user'
+              - $ref: '#/components/parameters/password'
+            responses:
+              '200':
+                $ref: '#/components/responses/200BasicAuth'
+              '401':
+                description: >-
+                  Unauthorized (The username and password used for Basic auth do not
+                  match those in the URL path.)
+                headers:
+                  Www-Authenticate:
+                    schema:
+                      type: string
+                      example: 'Basic realm="Fake Realm"'
+
+        /hidden-basic-auth/{user}/{password}:
+          get:
+            operationId: gethiddenuserpasswordById  
+            summary: Hidden Basic authentication
+            tags:
+              - auth
+            description: Returns 404 Not Found unless the request is authenticated.
+            security:
+              - basicAuth: []
+            parameters:
+              - $ref: '#/components/parameters/user'
+              - $ref: '#/components/parameters/password'
+            responses:
+              '200':
+                $ref: '#/components/responses/200BasicAuth'
+              '404':
+                description: >-
+                  Unautorized (the username and password used for Basic auth do not
+                  match those in the URL path.)
+
+        /bearer:
+          get:
+            description: inso lint desc
+            operationId: getbearertokenById  
+            summary: Tests Bearer authentication
+            tags:
+              - auth
+            security:
+              - bearerAuth: []
+            responses:
+              '200':
+                description: Authorized
+                content:
+                  application/json:
+                    schema:
+                      type: object
+                      properties:
+                        authenticated:
+                          type: boolean
+                          example: true
+                        token:
+                          type: string
+                          description: Bearer token specified in the request
+              '404':
+                description: Unauthorized
+
+
+        /status/{statusCode}:
+          summary: Returns the specified HTTP status code, or a random status code if more than one are given
+          parameters:
+            - name: statusCode
+              in: path
+              required: true
+              description: The status code to return, or a weighted list of statuses to pick from, such as `200:4,500:0.3,418`.
+              schema:
+                type: array
+                items:
+                  description: HTTP status code. May include optional weight, e.g. `200:0.9`
+                  oneOf:
+                    - type: string
+                    - type: integer
+                minItems: 1
+                example:
+                  - '200:5'
+                  - '500:0.3'
+                  - 418
+              style: simple
+
+          get:
+            description: inso lint desc
+            operationId: getstatuscodeById  
+            tags:
+              - Status codes
+            responses:
+              '200':
+                description: A response with the requested status code.
+          post:
+            description: inso lint desc
+            operationId: poststatuscodeById 
+            tags:
+              - Status codes
+            responses:
+              '201':
+                description: A response with the requested status code.
+          patch:
+            description: inso lint desc
+            operationId: patchstatuscodeById 
+            tags:
+              - Status codes
+            responses:
+              '200':
+                description: A response with the requested status code.
+          put:
+            description: inso lint desc
+            operationId: putstatuscodeById 
+            tags:
+              - Status codes
+            responses:
+              '200':
+                description: A response with the requested status code.
+          delete:
+            description: inso lint desc
+            operationId: deletestatuscodeById 
+            tags:
+              - Status codes
+            responses:
+              '204':
+                description: A response with the requested status code.
+
+        /xml:
+          get:
+            description: inso lint desc
+            operationId: getxmlById
+            tags:
+             - default
+            summary: Returns some XML.
+            responses:
+              '200':
+                description: OK
+                content:
+                  application/xml: {}
+
+        /html:
+          get:
+            description: inso lint desc
+            operationId: gethtmlById
+            tags:
+             - default
+            summary: Returns an HTML page
+            responses:
+              '200':
+                description: OK
+                content:
+                  text/html: {}
+
+        /image/{format}:
+          get:
+            description: inso lint desc
+            operationId: getimageformatById
+            summary: Returns an image with the specified format.
+            tags:
+              - images
+            parameters:
+              - in: path
+                name: format
+                required: true
+                schema:
+                  type: string
+                  enum:
+                    - png
+                    - jpeg
+                    - webp
+                    - svg
+            responses:
+              '200':
+                $ref: '#/components/responses/Image'
+
+        /image:
+          get:
+            description: inso lint desc
+            operationId: getimagesById
+            summary: Returns an image based on the Accept header.
+            tags:
+              - images
+            responses:
+              '200':
+                $ref: '#/components/responses/Image'
+              '406':
+                description: Client did not request a supported media type.
+
+        /cache:
+          get:
+            description: inso lint desc
+            operationId: getcacheById
+            tags:
+             - cache
+            summary: >-
+              Returns 200 unless an If-Modified-Since or If-None-Match header is
+              provided, when it returns a 304.
+            parameters:
+              - in: header
+                name: If-Modified-Since
+                required: false
+                description: >
+                  For testing purposes this header accepts any value. (???)
+                  See also https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Modified-Since
+                schema:
+                  type: string
+                  example: 'Wed, 21 Oct 2015 07:28:00 GMT'
+              - in: header
+                name: If-None-Match
+                required: false
+                description: >
+                  For testing purposes this header accepts any value. (???)
+                  See also https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match
+                schema:
+                  type: string
+                examples:
+                  etag:
+                    value: '"bfc13a64729c4290ef5b2c2730249c88ca92d82d"' # Quotes are part of the value
+                  etags:
+                    value: 'W/"67ab43", "54ed21", "7892dd"'
+                  asterisk:
+                    value: '*'
+            responses:
+              '200':
+                description: Neigher If-Modified-Since nor If-None-Match header is provided
+              '304':
+                description: If-Modified-Since or If-None-Match header is provided
+
+        /cookies:
+          get:
+            description: inso lint desc
+            operationId: getcookiesById
+            tags:
+              - Cookies
+            summary: Returns cookie data
+            responses:
+              '200':
+                description: OK
+        /cookies/set:
+          get:
+            description: inso lint desc
+            operationId: setcookiesById
+            tags:
+              - Cookies
+            summary: Sets one or more simple cookies
+            parameters:
+              - $ref: '#/components/parameters/freeFormQuery'
+            responses:
+              '200':
+                description: OK
+        /cookies/delete:
+          get:
+            description: inso lint desc
+            operationId: deletecookiesById
+            tags:
+              - Cookies
+            summary: Delete one or more simple cookies
+            parameters:
+              - $ref: '#/components/parameters/freeFormQuery'
+            responses:
+              '200':
+                description: OK
+
+
+      #################################
+
+      # Reusable things
+
+      #################################
+
+      components:
+        schemas:
+          CommonResponse:
+            description: Response returned by `/get`
+            type: object
+            properties:
+              args:
+                type: object
+                additionalProperties:
+                  type: string
+                description: Query string parameters specified in the request URL.
+              headers:
+                type: object
+                additionalProperties:
+                  type: string
+                description: >
+                  Headers (standard or custom) used in the request. Some typical headers are:
+                    - Accept
+                    - Accept-Encoding
+                    - Content-Length
+                    - Content-Type
+                    - Host
+                    - Origin
+                    - Referred
+                    - User-Agent
+                # not valid syntax
+                #example:
+                #  $ref: '#/components/examples/headers'
+              origin:
+                type: string
+                description: The origin IP from which the request was made.
+                example: '10.100.10.10, 10.100.10.44, 52.91.14.13'
+              url:
+                type: string
+                format: uri
+                description: The endpoint URL to which the request was made.
+                example: https://httpbin.org/post
+            required:
+              - args
+              - headers
+              - origin
+              - url
+
+      #     PostResponse:
+
+      #       description: Response returned by /post, /put, /patch and /delete
+
+      #       allOf:
+
+      #         - $ref: '#/components/schemas/CommonResponse'
+
+      #         - type: object
+
+      #           properties:
+
+      #             data: {}    # Always a plain text string???
+
+      #               # ???
+
+      #               # oneOf:
+
+      #               #   - type: string
+
+      #               #   - type: object
+
+      #             files: {}
+
+      #             #  type: object
+
+      #             #  description: ???
+
+      #             form:
+
+      #               type: object
+
+      #               additionalProperties:
+
+      #                 type: string
+
+      #               description: >
+
+      #                 Form parameters specified in "application/x-www-form-urlencoded" and
+
+      #                 `multipart/form-data` requests.
+
+      #             json:
+
+      #               description: >
+
+      #                 JSON value sent in the payload.
+
+      #                 Can be object, array, string, number, boolean or `null`.
+
+      #               nullable: true
+                    # oneOf:
+                    #   - type: object
+                    #   - type: array
+                    #   - type: string
+                    #   - type: number
+                    #   - type: boolean
+
+          TimestampWrapper:
+            type: object
+            properties:
+              timestamp:
+                $ref: '#/components/schemas/Timestamp'
+            required:
+              - timestamp
+
+          Timestamp:
+            type: object
+            properties:
+              epoch:
+                type: number
+                format: double
+                example: 1498229228.0671656
+              slang_date:
+                type: string
+                example: today
+              slang_time:
+                type: string
+                example: now
+              iso8601:
+                type: string
+                # format: ???
+                example: '2017-06-23T14:47:08.067166Z'
+              rfc2822:
+                type: string
+                # format: ???
+                example: 'Fri, 23 Jun 2017 14:47:08 GMT'
+              rfc3339:
+                type: string
+                # format: ????
+                example: '2017-06-23T14:47:08.06Z'
+            required:
+              - epoch
+              - slang_date
+              - slang_time
+              - iso8601
+              - rfc2822
+              - rfc3339
+            example:
+              epoch: 1485183550.84644
+              slang_date: Jan 23
+              slang_time: 4 months ago
+              iso8601: '2017-01-23T14:59:10.846440Z'
+              rfc2822: Mon, 23 Jan 2017 14:59:10 GMT
+              rfc3339: '2017-01-23T14:59:10.84Z'
+            # schema does NOT support plural "examples"
+            # examples:
+            #   Now:
+            #     value:
+            #       epoch: 1498229228.0671656
+            #       slang_date: today
+            #       slang_time: now
+            #       iso8601: '2017-06-23T14:47:08.067166Z'
+            #       rfc2822: Fri, 23 Jun 2017 14:47:08 GMT
+            #       rfc3339: '2017-06-23T14:47:08.06Z'
+            #   DateInPast:
+            #     description: Example of a date in the past
+            #     value:
+            #       epoch: 1485183550.84644,
+            #       slang_date": Jan 23
+            #       slang_time": 4 months ago
+            #       iso8601: '2017-01-23T14:59:10.846440Z'
+            #       rfc2822: Mon, 23 Jan 2017 14:59:10 GMT
+            #       rfc3339: '2017-01-23T14:59:10.84Z'
+
+        securitySchemes:
+          basicAuth:
+            type: http
+            scheme: basic
+            description: Use the same username and password as you will provide in path parameters.
+          bearerAuth:
+            type: http
+            scheme: bearer
+
+        parameters:
+          user:
+            name: user
+            in: path
+            required: true
+            description: Username. Use the same username in the path AND for authorization.
+            schema:
+              type: string
+          password:
+            name: password
+            in: path
+            required: true
+            description: Password. Use the same password in the path AND for authorization.
+            schema:
+              type: string
+          freeFormQuery:
+            name: freeform
+            in: query
+            schema:
+              type: object
+              additionalProperties: true
+            # This is the default serialization method, so it can be omitted
+            style: form
+            explode: true
+            description: >
+              Enter free-form query parameters in the JSON format
+              `{ "param1": "value1", "param2": "value2", ... }`.
+
+
+              Note that the parameters will be actually sent as
+              `?param1=value1&param2=value2&...`
+
+
+        responses:
+          200BasicAuth:
+            description: OK
+            content:
+              application/json:
+                schema:
+                  type: object
+                  properties:
+                    authenticated:
+                      type: boolean
+                      example: true
+                    user:
+                      type: string
+                      description: The user name specified in the request.
+          Image:
+            description: OK
+            content:
+              image/png, image/jpeg, image/webp:
+                schema:
+                  type: string
+                  format: binary
+              image/svg+xml: {}  # string? object?
+              image/svg: {}  # string? object?
+
+          TimestampResponse:
+            description: OK
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/TimestampWrapper'
+
+      #   examples:
+
+      #     headers:
+
+      #       value:
+
+      #         Accept: '*/*'
+
+      #         Connection: close
+
+      #         Host: httpbin.org
+
+      #         User-Agent: curl/7.37.0
+
+
+      #     Now:
+
+      #       value:
+
+      #         epoch: 1498229228.0671656
+
+      #         slang_date: today
+
+      #         slang_time: now
+
+      #         iso8601: '2017-06-23T14:47:08.067166Z'
+
+      #         rfc2822: Fri, 23 Jun 2017 14:47:08 GMT
+
+      #         rfc3339: '2017-06-23T14:47:08.06Z'
+
+      #     DateInPast:
+
+      #       description: Example of a date in the past
+
+      #       value:
+
+      #         epoch: 1485183550.84644,
+
+      #         slang_date": Jan 23
+
+      #         slang_time": 4 months ago
+
+      #         iso8601: '2017-01-23T14:59:10.846440Z'
+
+      #         rfc2822: Mon, 23 Jan 2017 14:59:10 GMT
+
+      #         rfc3339: '2017-01-23T14:59:10.84Z'
+    contentType: yaml
+    _type: api_spec
+  - _id: uts_c6b9ef22936544eb9f635524de8269d4
+    parentId: wrk_212f99a03e6b412eb4ada211767460fa
+    modified: 1704274838011
+    created: 1704274838011
+    name: New Suite
+    _type: unit_test_suite
+  - _id: env_002dc7bff466479e8629abbe49fc2c1d
+    parentId: env_d658eb43c0b19c015dc7ce7e8ebcc9af0dd67451
+    modified: 1704275191932
+    created: 1704274773334
+    name: OpenAPI env httpbin.org
+    data:
+      scheme: https
+      base_path: ""
+      host: httpbin.org
+      httpUsername: username
+      httpPassword: password
+      bearerToken: bearerToken
+      base_url: http://httpbin.org
+    dataPropertyOrder:
+      "&":
+        - scheme
+        - base_path
+        - host
+        - httpUsername
+        - httpPassword
+        - bearerToken
+        - base_url
+    color: null
+    isPrivate: false
+    metaSortKey: 1704274773334
+    _type: environment
+  - _id: env_e511c22bc7e2432a9c9f80e6979da6f2
+    parentId: env_d658eb43c0b19c015dc7ce7e8ebcc9af0dd67451
+    modified: 1704274773335
+    created: 1704274773335
+    name: OpenAPI env eu.httpbin.org
+    data:
+      scheme: https
+      base_path: ""
+      host: eu.httpbin.org
+      httpUsername: username
+      httpPassword: password
+      bearerToken: bearerToken
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1704274773335
+    _type: environment
+  - _id: ut_f3e04c6681884e5e883e7a63926456de
+    parentId: uts_c6b9ef22936544eb9f635524de8269d4
+    modified: 1704274848056
+    created: 1704274840529
+    requestId: req_fa1484a32e9746d18b1f8ad88fe827dd
+    name: Returns 200
+    code: |-
+      const response1 = await insomnia.send();
+      expect(response1.status).to.equal(200);
+    _type: unit_test

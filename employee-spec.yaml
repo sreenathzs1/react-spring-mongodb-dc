@@ -1,0 +1,196 @@
+openapi: 3.0.0
+info:
+    title: Employees API
+    version: 1.0.1
+    description: A Sample Employees API
+    contact:
+        name: employees
+        url: 'http://localhost:3000'
+servers:
+    -
+        url: 'http://localhost:8080/api/v1'
+        description: Employees Base URL
+tags:
+  - name: Employees
+    description: Operations for Employees
+paths:
+    /employees:
+        get:
+            tags:
+                - Employees
+            responses:
+                '200':
+                    content:
+                        application/json:
+                            schema:
+                                type: array
+                                items:
+                                    $ref: '#/components/schemas/Employee'
+                    description: OK
+            operationId: getEmployees
+            summary: List employees
+            description: returns all registered employees names
+        post:
+            requestBody:
+                description: Optional description in *Markdown*
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/createEmployee'
+                required: true
+            tags:
+                - Employees
+            responses:
+                '201':
+                    description: Record successfully added
+            operationId: createEmployee
+            summary: Add a new Employee
+            description: create employee
+    '/employees/{id}':
+        description: Retrieve the Employee based on a Path Parameter
+        get:
+            operationId: getEmployeesByID
+            summary: List an employee
+            description: returns all registered employees names by ID
+            tags:
+                - Employees
+            parameters:
+                -   name: id
+                    schema:
+                        minimum: 1
+                        type: integer
+                    in: path
+                    required: true
+            responses:
+                '200':
+                    content:
+                        application/json:
+                            schema:
+                                type: array
+                                items:
+                                    properties:
+                                        id:
+                                            type: integer
+                                            example: 1
+                                        firstName:
+                                            type: string
+                                            example: admin
+                                        lastName:
+                                            type: string
+                                            example: admin
+                                        emailID:
+                                            type: string
+                                            example: admin@gmail.com
+                    description: Success response with a path parameter
+                '404':
+                    description: 'Employee not found for this id, refer to [ https://httpstatuses.com/404 ]'
+        put:
+            operationId: updateEmployeesBYID
+            summary: update an indiv employee
+            description: update registered employees names by ID
+            requestBody:
+                description: Optional description in *Markdown*
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/createEmployee'
+                required: true
+            tags:
+                - Employees
+            parameters:
+                -
+                    name: id
+                    schema:
+                        minimum: 1
+                        type: integer
+                    in: path
+                    required: true
+            responses:
+                '200':
+                    description: The resource was updated successfully.
+                '304':
+                    description: The resource Not modified.
+                '404':
+                    description: Employee not found for this id.
+        delete:
+            operationId: deleteEmployeesByID
+            summary: Delete employees
+            description: Delete an employee by ID
+            parameters:
+                -   name: id
+                    schema:
+                        minimum: 1
+                        type: integer
+                    in: path
+                    required: true
+            tags:
+                - Employees
+            responses:
+                '204':
+                    description: No Content.
+                '403':
+                    description: Permission denied.
+                '404':
+                    description: Employee not found for this id.
+        patch:
+            operationId: updateanEmployeeByID
+            summary: Update an indivisual employee
+            description: Update an indivisual employee by ID
+            requestBody:
+                description: Optional description in *Markdown*
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/createEmployee'
+                required: true
+            tags:
+                - Employees
+            parameters:
+                -
+                    name: id
+                    schema:
+                        minimum: 1
+                        type: integer
+                    in: path
+                    required: true
+            responses:
+                '200':
+                    description: The resource was updated successfully.
+                '304':
+                    description: The resource Not modified.
+                '404':
+                    description: Employee not found for this id.
+components:
+    schemas:
+        Employee:
+            type: object
+            properties:
+                id:
+                    format: int64
+                    description: The unique identifier for the employee.
+                    minimum: 1
+                    type: integer
+                emailId:
+                    format: email
+                    description: The email address of the employee.
+                    type: string
+                firstName:
+                    description: The first name of the employee.
+                    type: string
+                lastName:
+                    description: The last name of the employee.
+                    type: string
+        createEmployee:
+            type: object
+            properties:
+                emailId:
+                    format: email
+                    description: The email address of the employee.
+                    type: string
+                firstName:
+                    description: The first name of the employee.
+                    type: string
+                lastName:
+                    description: The last name of the employee.
+                    type: string
+
